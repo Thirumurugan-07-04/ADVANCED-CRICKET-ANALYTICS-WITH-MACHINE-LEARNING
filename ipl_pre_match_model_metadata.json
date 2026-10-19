@@ -1,0 +1,21 @@
+{
+  "model": "XGBoost binary classifier",
+  "target": "winner == team1",
+  "training_rows": 1187,
+  "validation_rows": 238,
+  "chronological_holdout_accuracy": 0.458,
+  "features": [
+    "team1",
+    "team2",
+    "venue",
+    "toss_winner",
+    "toss_decision"
+  ],
+  "excluded_result_columns": [
+    "winner",
+    "player_of_match",
+    "team1_won",
+    "toss_winner_won"
+  ],
+  "note": "Fitted on all completed matches in clean_ipl_matches.csv."
+}

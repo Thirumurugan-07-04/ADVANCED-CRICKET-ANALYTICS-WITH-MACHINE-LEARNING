@@ -1,0 +1,45 @@
+{
+  "data": {
+    "source": "/Users/thirumurugan/cricket_analysis/data/ipl_ball_by_ball_standardized.csv",
+    "matches": 1243
+  },
+  "first_innings_score": {
+    "training_matches": 986,
+    "validation_matches": 247,
+    "training_rows": 52494,
+    "validation_rows": 13086,
+    "chronological_holdout_mae_runs": 11.79,
+    "chronological_holdout_rmse_runs": 15.88,
+    "within_10_runs": 0.5599,
+    "within_15_runs": 0.7054,
+    "within_20_runs": 0.8096,
+    "starts_after_overs": "11.0"
+  },
+  "live_second_innings_after_8_overs": {
+    "model": "live_second_innings_after_8_overs",
+    "training_matches": 966,
+    "validation_matches": 242,
+    "training_rows": 62604,
+    "validation_rows": 15283,
+    "decision_threshold": 0.4,
+    "chronological_holdout_accuracy": 0.8021,
+    "chronological_holdout_accuracy_at_0_50": 0.7957,
+    "chronological_holdout_roc_auc": 0.8911
+  },
+  "final_three_overs": {
+    "model": "final_three_overs",
+    "training_matches": 816,
+    "validation_matches": 205,
+    "training_rows": 12359,
+    "validation_rows": 3058,
+    "decision_threshold": 0.44,
+    "chronological_holdout_accuracy": 0.8924,
+    "chronological_holdout_accuracy_at_0_50": 0.8924,
+    "chronological_holdout_roc_auc": 0.9638
+  },
+  "operational_three_model_average": {
+    "score_tolerance": "first-innings score is considered correct when within \u00b120 runs",
+    "average": 0.8347,
+    "warning": "This is an operational summary, not a standard single-model accuracy metric."
+  }
+}
